@@ -1,0 +1,15 @@
+name: Shell Commands - GH Actions
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: start log
+        run: echo "Starting up CI/CD"
+      - name: init script
+        run: |
+          node -v
+          npm -v
+          python -v
